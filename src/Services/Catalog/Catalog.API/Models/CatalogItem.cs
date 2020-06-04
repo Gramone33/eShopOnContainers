@@ -13,6 +13,7 @@ namespace Catalog.API.Models
         public int? IdBrand { get; set; }
         //public CatalogBrand CatalogBrand { get; set; }
         public string BrandName { get; set; }
+        public string TypeTitle { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }

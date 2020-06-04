@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "src\Services\Catalog\Catalog.API\Catalog.API.csproj", "{6D2E175B-6CC5-4C4D-BFF2-2C71EC4B3CA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "src\Services\Catalog\Catalog.API\Catalog.API.csproj", "{6D2E175B-6CC5-4C4D-BFF2-2C71EC4B3CA3}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{287B2C4C-70E4-4344-9A70-26EB7AF6E64C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog.DB", "Catalog.DB", "{77047E7A-8638-4CA6-83C5-EA5C4255D2E6}"
+	ProjectSection(SolutionItems) = preProject
+		src\Services\Catalog\Catalog.DB\entrypoint.sh = src\Services\Catalog\Catalog.DB\entrypoint.sh
+		src\Services\Catalog\Catalog.DB\eShopOnContainersCatalog.sh = src\Services\Catalog\Catalog.DB\eShopOnContainersCatalog.sh
+		src\Services\Catalog\Catalog.DB\eShopOnContainersCatalog.sql = src\Services\Catalog\Catalog.DB\eShopOnContainersCatalog.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +24,10 @@ Global
 		{6D2E175B-6CC5-4C4D-BFF2-2C71EC4B3CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D2E175B-6CC5-4C4D-BFF2-2C71EC4B3CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D2E175B-6CC5-4C4D-BFF2-2C71EC4B3CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287B2C4C-70E4-4344-9A70-26EB7AF6E64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287B2C4C-70E4-4344-9A70-26EB7AF6E64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287B2C4C-70E4-4344-9A70-26EB7AF6E64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287B2C4C-70E4-4344-9A70-26EB7AF6E64C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
